@@ -4,7 +4,7 @@ const formEl = document.querySelector('.feedback-form');
 const inputEmailEl = document.querySelector("input[name='email']");
 const textareaMessageEl = document.querySelector("textarea[name='message']");
 const formDate = {};
-STORAGE_KEY = 'feedback-form-state';
+const STORAGE_KEY = 'feedback-form-state';
 
 formEl.addEventListener('submit', onFormSubmit);
 formEl.addEventListener('input', throttle(onInput, 500));
